@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "RF";
+  src: url("/fonts/RFDewi-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RF-Black";
+  src: url("/fonts/RFDewi-Black") format("woff2");
+}
+
+* {
+  font-family: "RF";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

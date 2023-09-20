@@ -6,8 +6,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "plop": "plop"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -21,6 +20,7 @@
     "@morev/vue-transitions": "^2.3.6",
     "@nuxt/image": "^1.0.0-rc.1",
     "@unocss/reset": "^0.53.5",
-    "nuxt-icons": "^3.2.1"
+    "nuxt-icons": "^3.2.1",
+    "swiper": "^10.2.0"
   }
 }

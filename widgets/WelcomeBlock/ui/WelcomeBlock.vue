@@ -39,6 +39,6 @@ import Advantages from "./Advantages.vue";
       </div>
     </section>
 
-    <Advantages />
+    <Advantages class="mt-7" />
   </section>
 </template>

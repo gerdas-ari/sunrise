@@ -1,11 +1,11 @@
 <template>
-  <section class="text-white container text-center">
-    <div class="bg-black py-5 h-[550px]">
-      <p class="border-b pb-4">Акция</p>
+  <section class="text-white container text-center b">
+    <div class="bg-black  h-[550px]">
+      <p class="border-b b-dark py-5 ">Акция</p>
 
       <div class="flex justify-center">
         <h2 class="text-5xl mt-7 w-1/2 font-bold">
-          Закажи авто в этом месяце и получи скидку 20% на наши услуги
+          Закажи авто в этом месяце <br> и получи скидку 20% на наши услуги
         </h2>
       </div>
 

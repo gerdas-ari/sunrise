@@ -11,16 +11,26 @@ export default defineConfig({
     colors: {
       red: "#F00",
       gray: "#676767",
+      dark: "#454545",
     },
   },
 
   shortcuts: {
-    container: "px-[94px]",
+    container: "mx-[94px]",
 
-    input: "border p-3 outline-transparent focus:outline-gray transition",
+    b: "border-dark border-[0.5px]",
+
+    // Inputs
+    input:
+      "p-3 outline-transparent outline-none focus:outline-gray bg-dark transition",
+    "input-black": "border border-black p-3 px-5 outline-none ",
 
     // Buttons
-    "btn-red-filled":
-      "bg-red text-white flex justify-center items-center p-4",
+    "btn-red-filled": "bg-red text-white flex justify-center items-center p-4",
+    "btn-red-outline":
+      "bg-transparent border border-red p-3 px-5 transition hover:bg-red hover:text-white hover:border-transparent",
+
+    "btn-black-outline":
+      "bg-transparent text-black border border-black p-3 px-5 transition hover:bg-black hover:text-white hover:border-transparent",
   },
 });

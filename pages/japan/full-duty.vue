@@ -9,6 +9,8 @@ import { Advantages } from "~/widgets/_catalog/Advantages";
 import { PrinciplesList } from "~/widgets/PrinciplesList";
 import { DeliveryInfo } from "~/widgets/_catalog/DeliveryInfo";
 import { DownLoadPDF } from "~/widgets/_catalog/DownloadPDF";
+import { YoutubeVideos } from "~/widgets/YoutubeVideos";
+import { ClientReviews } from "~/widgets/ClientReviews";
 
 const categories = [
   "Кей-кары",
@@ -133,4 +135,8 @@ const currentCategory = ref(categories[0]);
   />
 
   <DownLoadPDF class="mt-50" />
+
+  <YoutubeVideos class="mt-50" />
+
+  <ClientReviews class="mt-50" :swiper-class="'ClientReviews'" />
 </template>

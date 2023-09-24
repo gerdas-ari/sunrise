@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Socials } from "~/widgets/Header";
+import { Socials } from "~/widgets/_layout/Header";
 import Consultation from "./Consultation.vue";
 import Contacts from "./Contacts.vue";
 import SummaryVue from "./SummaryVue.vue";

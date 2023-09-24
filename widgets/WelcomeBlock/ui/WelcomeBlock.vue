@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { CatalogFooter } from "~/widgets/_catalog/CatalogHeader";
 import Advantages from "./Advantages.vue";
 </script>
 
@@ -39,6 +40,6 @@ import Advantages from "./Advantages.vue";
       </div>
     </section>
 
-    <Advantages class="mt-7" />
+    <CatalogFooter class="mt-4" />
   </section>
 </template>

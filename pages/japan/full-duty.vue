@@ -2,15 +2,14 @@
 import { SwiperSlide } from "swiper/vue";
 import { CarEntity } from "~/entities/Car";
 import { AutoCategories } from "~/widgets/AutoCategories";
+import { ClientReviews } from "~/widgets/ClientReviews";
 import { FreeConsultation } from "~/widgets/FreeConsultation";
-import { Advantages as WelcomeFooter } from "~/widgets/WelcomeBlock";
-import { CatalogHeader } from "~/widgets/_catalog/CatalogHeader";
-import { Advantages } from "~/widgets/_catalog/Advantages";
 import { PrinciplesList } from "~/widgets/PrinciplesList";
+import { YoutubeVideos } from "~/widgets/YoutubeVideos";
+import { Advantages } from "~/widgets/_catalog/Advantages";
+import { CatalogHeader, CatalogFooter } from "~/widgets/_catalog/CatalogHeader";
 import { DeliveryInfo } from "~/widgets/_catalog/DeliveryInfo";
 import { DownLoadPDF } from "~/widgets/_catalog/DownloadPDF";
-import { YoutubeVideos } from "~/widgets/YoutubeVideos";
-import { ClientReviews } from "~/widgets/ClientReviews";
 
 const categories = [
   "Кей-кары",
@@ -54,6 +53,7 @@ const currentCategory = ref(categories[0]);
     :image-src="'/images/camry.png'"
     :title="'Автомобили с аукционов Японии'"
     :description="'Поможем с выбором, купим, привезём, доставим в любой город РФ.'"
+    :form-title="'Нужен авто в отличном состоянии из Японии?'"
   >
     <template #button-group>
       <div class="flex gap-2 py-10">
@@ -63,7 +63,7 @@ const currentCategory = ref(categories[0]);
     </template>
 
     <template #footer>
-      <WelcomeFooter />
+      <CatalogFooter />
     </template>
   </CatalogHeader>
 

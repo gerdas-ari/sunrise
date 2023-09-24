@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { FooterVue } from "~/widgets/Footer";
-import { HeaderVue } from "~/widgets/Header";
+import { FooterVue } from "~/widgets/_layout/Footer";
+import { HeaderVue } from "~/widgets/_layout/Header";
 </script>
 
 <template>

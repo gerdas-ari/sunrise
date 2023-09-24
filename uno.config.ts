@@ -22,7 +22,7 @@ export default defineConfig({
 
     // Inputs
     input:
-      "p-3 outline-transparent outline-none focus:outline-gray bg-dark transition",
+      "p-3 outline-transparent outline-none focus:outline-gray bg-dark transition bg-opacity-40",
     "input-black": "border border-black p-3 px-5 outline-none ",
 
     // Buttons

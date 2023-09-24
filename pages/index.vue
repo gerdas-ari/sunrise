@@ -7,9 +7,10 @@ import { FreeConsultation } from "~/widgets/FreeConsultation";
 import { NewsBlock } from "~/widgets/NewsBlock";
 import { PrinciplesList } from "~/widgets/PrinciplesList";
 import { StockBlock } from "~/widgets/StockBlock";
-import { WelcomeBlock } from "~/widgets/WelcomeBlock";
 import { WorkSteps } from "~/widgets/WorkSteps";
 import { YoutubeVideos } from "~/widgets/YoutubeVideos";
+import { WelcomeBlock } from "~/widgets/WelcomeBlock";
+
 
 const categories = [
   "Кей-кары",

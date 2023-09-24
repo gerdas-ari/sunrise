@@ -5,6 +5,7 @@ const props = defineProps<{
   title: string;
   description: string;
   imageSrc: string;
+  formTitle: string;
 }>();
 </script>
 
@@ -22,9 +23,7 @@ const props = defineProps<{
           </p>
         </div>
 
-        <ConsultationFormMini
-          :title="'Нужен авто в отличном состоянии из Японии?'"
-        />
+        <ConsultationFormMini :title="formTitle" />
       </div>
 
       <slot name="button-group" />

@@ -2,9 +2,10 @@
 import { Swiper } from "swiper/vue";
 
 const props = defineProps<{
-  linkTitle: string;
+  linkTitle?: string;
   linkHref?: string;
   swiperClass: string;
+  slidesPerView?: number;
 }>();
 
 // Import Swiper styles
@@ -31,7 +32,7 @@ const modules = [Pagination, Navigation];
     <swiper
       :space-between="70"
       :direction="'horizontal'"
-      :slides-per-view="3"
+      :slides-per-view="slidesPerView ?? 3"
       :pagination="{
         type: 'progressbar',
       }"
@@ -59,7 +60,10 @@ const modules = [Pagination, Navigation];
         </button>
       </div>
 
-      <button class="btn-black-outline flex justify-center items-center gap-2">
+      <button
+        class="btn-red-outline my-2 flex justify-center items-center gap-2"
+        v-if="linkTitle"
+      >
         {{ linkTitle }}
 
         <NuxtIcon name="arrow-right-smooth" class="mt-1" />

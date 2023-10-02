@@ -3,6 +3,7 @@ const props = defineProps<{
   title?: string;
   description?: string;
   additional?: string;
+  head?: string;
 }>();
 </script>
 
@@ -11,6 +12,8 @@ const props = defineProps<{
     <div
       class="absolute w-full h-full flex flex-col gap-7 justify-center items-center"
     >
+      <p>{{ head }}</p>
+
       <h2 class="text-6xl font-bold">{{ title }}</h2>
 
       <p class="text-3xl">{{ description }}</p>

@@ -20,6 +20,8 @@ const categories = [
   "Кроссоверы и джипы",
 ];
 
+const currentCategory = ref(categories[0]);
+
 const advantages = [
   {
     title: "Чистая предыстория",
@@ -45,7 +47,6 @@ const advantages = [
 
 const strings = ["MAZDA", "HONDA", "MITSUBISHI", "TOYOTA"];
 
-const currentCategory = ref(categories[0]);
 </script>
 
 <template>

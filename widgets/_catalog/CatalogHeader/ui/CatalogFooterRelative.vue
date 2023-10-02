@@ -9,7 +9,7 @@ const props = defineProps<{
     <div
       v-for="string in strings"
       :key="string"
-      class="b-r b-dark basis-1/4 py-5 pb-20 text-2xl font-bold last:b-none"
+      class="b-l b-dark basis-1/4 py-5 pb-20 text-2xl font-bold first:b-none p-4"
     >
       {{ string }}
     </div>

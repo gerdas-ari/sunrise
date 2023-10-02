@@ -2,9 +2,9 @@
   <article class="border b-dark p-5">
     <div class="flex justify-center">
       <img
-        src="https://w.forfun.com/fetch/8a/8a4392cd961d12741a6063dabb331d63.jpeg"
-        alt=""
-        class="w-70 h-48"
+        src="/assets/images/auto_mock.png"
+        alt="Изображение автомобиля"
+        class=""
       />
     </div>
 

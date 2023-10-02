@@ -1,3 +1,4 @@
-import ArticleEntity from "./ArticleEntity.vue";
+import ArticleSlide from "./ArticleSlide.vue";
+import ArticleBlock from "./ArticleBlock.vue";
 
-export { ArticleEntity };
+export { ArticleSlide, ArticleBlock };

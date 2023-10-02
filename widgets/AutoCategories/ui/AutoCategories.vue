@@ -13,7 +13,7 @@ const props = defineProps<{
       v-for="cat in categories"
       :key="cat"
       @click="emit('selectTab', cat)"
-      class="cursor-pointer border b-dark p-4 w-full text-center transition"
+      class="cursor-pointer border b-dark p-4 w-full text-center transition flex justify-center items-center"
       :class="{ 'btn-red-filled': activeCat === cat }"
     >
       {{ cat }}

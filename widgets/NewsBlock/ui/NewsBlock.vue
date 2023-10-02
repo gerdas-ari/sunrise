@@ -1,11 +1,18 @@
 <script lang="ts" setup>
 import { SwiperSlide } from "swiper/vue";
-import { ArticleEntity } from "~/entities/Article";
+import { ArticleSlide } from "~/entities/Article";
+
+const props = defineProps<{
+  title?: string
+}>()
+
+
+
 </script>
 
 <template>
   <section class="container">
-    <h2 class="text-4xl font-bold text-center">Новости и статьи</h2>
+    <h2 class="text-4xl font-bold text-center">{{ title ?? 'Новости и статьи' }}</h2>
 
     <ListWithPagination
       class="mt-15"
@@ -13,7 +20,7 @@ import { ArticleEntity } from "~/entities/Article";
       :swiper-class="'news'"
     >
       <SwiperSlide v-for="article in 5">
-        <ArticleEntity />
+        <ArticleSlide />
       </SwiperSlide>
     </ListWithPagination>
   </section>

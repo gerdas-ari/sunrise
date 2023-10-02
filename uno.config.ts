@@ -18,7 +18,7 @@ export default defineConfig({
   shortcuts: {
     container: "mx-[94px]",
 
-    b: "border-dark border-[0.5px]",
+    b: "b-dark border-[0.5px]",
 
     // Inputs
     input:
@@ -31,6 +31,6 @@ export default defineConfig({
       "bg-transparent border border-red p-3 px-5 transition hover:bg-red hover:text-white hover:border-transparent",
 
     "btn-black-outline":
-      "bg-transparent text-black border border-black p-3 px-5 transition hover:bg-black hover:text-white hover:border-transparent",
+      "bg-transparent  b hover:(b-white) p-3 px-5 transition flex justify-center items-center ",
   },
 });

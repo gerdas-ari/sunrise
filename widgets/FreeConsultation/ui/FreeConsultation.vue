@@ -18,11 +18,12 @@ const props = defineProps<{
       </div>
 
       <div
+        v-if="imageSrc"
         class="w-full h-full absolute top-0 left-0 h-full flex items-end justify-end -z-10 box-shadow"
       >
         <NuxtImg
           :src="/images/ + imageSrc"
-          class="select-none pointer-events-none w-200 h-100"
+          class="select-none pointer-events-none w-1/2 h-2/3"
         />
       </div>
     </div>
@@ -34,7 +35,7 @@ const props = defineProps<{
           автомобиль
         </p>
 
-        <ConsultationForm class="text-white w-full mt-7" />
+        <ConsultationForm class="w-full mt-7" />
       </div>
     </div>
   </section>

@@ -58,7 +58,7 @@ const config = [
   <section class="container">
     <h1 class="text-center text-4xl font-bold my-10">Сервисы</h1>
 
-    <div class="grid grid-cols-3 gap-5 mt-10">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
       <ServiceCard
         v-for="item in config"
         :title="item.title"

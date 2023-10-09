@@ -11,16 +11,16 @@ import { SwiperSlide } from "swiper/vue";
       <p class="text-gray mt-4">Главный плюс - это экономия ваших денег</p>
     </div>
 
-    <div class="flex mt-15 gap-5">
-      <div class="w-200 b b-dark">
+    <div class="2xl:flex mt-15 gap-5">
+      <div class="w-full 2xl:w-200 h-full b b-dark">
         <Slider :swiper-class="'whyBroken'">
-          <SwiperSlide v-for="i in 3" :key="i">
-            <NuxtImg src="/images/china.png" />
+          <SwiperSlide v-for="i in 3" :key="i" class="">
+            <NuxtImg src="/images/china.png" class="object-cover" alt="Изображение сломанного грузовика" />
           </SwiperSlide>
         </Slider>
       </div>
 
-      <div class="text-gray flex flex-col gap-4 b b-dark p-10">
+      <div class="text-gray flex flex-col gap-4 b b-dark p-10 mt-4 lg:mt-0">
         <p>
           Представьте ситуацию: у вас есть 2 млн рублей, а машина, которая вам
           нравится, стоит 2,5 миллиона. Чтобы заработать или накопить ещё денег,

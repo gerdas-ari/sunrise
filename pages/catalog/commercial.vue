@@ -60,9 +60,13 @@ const currentCategory = ref(categories[0]);
     :form-title="'Нужен грузовик в отличном состоянии?'"
   >
     <template #button-group>
-      <div class="flex gap-2 py-10">
-        <button class="btn-red-filled px-15">Рассчитать стоимость</button>
-        <button class="btn-red-outline px-15">Написать в WhatsApp</button>
+      <div class="md:flex gap-2 py-10 px-4 md:px-0">
+        <button class="btn-red-filled px-15 w-full my2 md:w-80">
+          Рассчитать стоимость
+        </button>
+        <button class="btn-red-outline px-15 w-full my2 md:w-80">
+          Написать в WhatsApp
+        </button>
       </div>
     </template>
 
@@ -134,7 +138,6 @@ const currentCategory = ref(categories[0]);
   />
 
   <CommercialBuyAdvantages class="mt-50" />
-
 
   <Advantages
     :title="'Преимущества покупки мотоцикла из Японии'"

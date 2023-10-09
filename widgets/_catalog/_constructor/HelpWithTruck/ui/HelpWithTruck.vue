@@ -8,7 +8,7 @@ import { SwiperSlide } from "swiper/vue";
       Поможем привести грузовик в разбор
     </h2>
 
-    <div class="mt-15 flex gap-5">
+    <div class="mt-15 lg:flex gap-5">
       <div class="b b-dark p-10 flex flex-col gap-5 text-gray">
         <p>
           На аукционах Японии огромный выбор грузовиков в любом исполнении
@@ -39,12 +39,12 @@ import { SwiperSlide } from "swiper/vue";
         </div>
       </div>
 
-      <div class="w-200">
-        <Slider :swiper-class="'truck'" class="b b-dark">
-          <SwiperSlide v-for="i in 3" :key="i">
-            <img src="/assets/images/broken_car.png" alt="" class="w-full" />
-          </SwiperSlide>
-        </Slider>
+      <div class="w-full lg:w-1/2">
+        <NuxtPicture
+          src="/images/broken_truck.png"
+          class="w-full h-full object-cover"
+          alt="Изображение сломанного грузовика"
+        />
       </div>
     </div>
   </section>

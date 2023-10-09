@@ -1,5 +1,8 @@
 <script lang="ts" setup>
-import { ConsultationForm } from "~/features/ConsultationForm";
+import {
+  ConsultationForm,
+  ConsultationFormSplit,
+} from "~/features/ConsultationForm";
 
 const props = defineProps<{
   title: string;
@@ -9,8 +12,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <section class="flex justify-between container gap-5">
-    <div class="bg-black text-white relative p-10 z-10 basis-2/3 b">
+  <section class="lg:flex justify-between container gap-5">
+    <div
+      class="bg-black text-white relative p-10 z-10 min-h-100 lg:basis-2/3 b"
+    >
       <div class="z-20">
         <h2 class="text-4xl font-bold">{{ title }}</h2>
 
@@ -21,21 +26,26 @@ const props = defineProps<{
         v-if="imageSrc"
         class="w-full h-full absolute top-0 left-0 h-full flex items-end justify-end -z-10 box-shadow"
       >
-        <NuxtImg
+        <NuxtPicture
           :src="/images/ + imageSrc"
-          class="select-none pointer-events-none w-1/2 h-2/3"
+          class="select-none pointer-events-none"
+          alt="Бесплатная консультация"
         />
       </div>
     </div>
 
-    <div class="basis-1/3 bg-black flex justify-center items-center p-7 b">
+    <div
+      class="basis-1/3 bg-black justify-center items-center p-7 mt-5 lg:mt-0 b"
+    >
       <div class="w-full h-full">
         <p class="text-white text-2xl font-bold">
           Поможем подобрать <br />
           автомобиль
         </p>
 
-        <ConsultationForm class="w-full mt-7" />
+        <div class="">
+          <ConsultationForm class="w-full mt-7 w-full" />
+        </div>
       </div>
     </div>
   </section>

@@ -6,7 +6,7 @@ const experience = ref("");
 </script>
 
 <template>
-  <form class="flex flex-col gap-3 w-90">
+  <form class="flex flex-col gap-3 ">
     <input
       type="text"
       placeholder="Ваше имя"

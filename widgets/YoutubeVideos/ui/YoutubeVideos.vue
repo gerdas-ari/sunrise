@@ -9,11 +9,11 @@
       </p>
     </div>
 
-    <div class="flex gap-5 mt-15 font-bold">
+    <div class="lg:flex gap-5 mt-15 font-bold">
       <div>
         <div class="">
           <iframe
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+            src="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY?controls=0"
             class="w-full h[360px]"
           ></iframe>
 
@@ -22,11 +22,11 @@
           </p>
         </div>
 
-        <div class="flex gap-2">
+        <div class="lg:flex gap-2">
           <div class="basis-1/2">
             <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              class="w-full h-48"
+              src="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY?controls=0"
+              class="w-full h-100 lg:h-48"
             ></iframe>
 
             <p class="my-4">
@@ -36,8 +36,8 @@
 
           <div class="basis-1/2">
             <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              class="w-full h-48"
+              src="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY?controls=0"
+              class="w-full h-100 lg:h-48"
             ></iframe>
 
             <p class="my-4">
@@ -48,11 +48,11 @@
       </div>
 
       <div>
-        <div class="flex gap-2">
+        <div class="lg:flex gap-2">
           <div class="basis-1/2">
             <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              class="w-full h-48"
+              src="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY?controls=0"
+              class="w-full h-100 lg:h-48"
             ></iframe>
 
             <p class="my-4">
@@ -62,8 +62,8 @@
 
           <div class="basis-1/2">
             <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              class="w-full h-48"
+              src="https://www.youtube-nocookie.com/embed/tgbNymZ7vqY?controls=0"
+              class="w-full h-100 lg:h-48"
             ></iframe>
 
             <p class="my-4">
@@ -80,7 +80,11 @@
             интересуют
           </p>
 
-          <NuxtImg src="/images/s.png" class="absolute bottom-0 right-0 w-full h-70 -z-10" />
+          <NuxtPicture
+            src="/images/s.png"
+            class="absolute bottom-0 right-0 w-full h-70 -z-10"
+            alt="Контент на Youtube"
+          />
 
           <button
             class="flex bg-red text-white w-full mt-40 p-4 flex justify-center items-center text-xl gap-5"
@@ -91,15 +95,6 @@
           </button>
         </div>
       </div>
-
-      <!-- <iframe
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-        class=""
-      ></iframe>
-
-      <iframe
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-      ></iframe> -->
     </div>
   </section>
 </template>

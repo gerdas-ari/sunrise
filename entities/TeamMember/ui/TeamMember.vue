@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <article class="flex flex-col gap-2 b b-dark">
-    <NuxtImg :src="imgSrc" />
+    <NuxtImg :src="imgSrc" alt="Изображение члена команды" />
 
     <div class="p-4">
       <p class="text-xl font-bold">{{ name }}</p>

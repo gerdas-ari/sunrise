@@ -35,6 +35,8 @@
 
     <p class="text-2xl my-5 font-bold">4 000 000 ₽</p>
 
-    <button class="btn-red-filled w-full">Хочу такой же</button>
+    <NuxtLink :to="'/catalog/aviable/1'">
+      <button class="btn-red-filled w-full">Хочу такой же</button>
+    </NuxtLink>
   </article>
 </template>

@@ -1,11 +1,10 @@
 <script lang="ts" setup>
 import { CatalogFooter } from "~/widgets/_catalog/CatalogHeader";
-import Advantages from "./Advantages.vue";
 </script>
 
 <template>
   <section class="bg-black text-white text-left container pt-10">
-    <div class="w-1/3">
+    <div class="w-full md:w-1/2">
       <h1 class="text-5xl font-bold leading-14">
         Автомобили из Японии, Кореи и Китая
       </h1>
@@ -16,24 +15,25 @@ import Advantages from "./Advantages.vue";
       </p>
     </div>
 
-    <section class="pt-[224px] flex justify-between">
+    <section class="pt-[224px] md:flex justify-between">
       <div class="flex gap-4">
-        <button class="btn-red-filled p-3 px-10">Подробнее</button>
-        <button class="btn-red-filled p-3 px-15">Рассчитать стоимость</button>
+        <button class="btn-red-filled p-3 px-15 h-13 w-full md:w-70 text-nowrap">
+          Рассчитать стоимость
+        </button>
       </div>
 
       <div class="flex items-center justify-center">
         <button
-          class="bg-white text-black w-12 h-12 flex justify-center items-center border cursor-pointer"
+          class="bg-white text-black h-12 w-1/3 mt-4 md:(w-12 h-12) flex justify-center items-center border cursor-pointer"
         >
           <NuxtIcon name="arrow-left" />
         </button>
         <span
-          class="bg-white text-black w-16 h-12 flex justify-center items-center border"
+          class="bg-white text-black h-12 w-full mt-4 md:(w-16 h-12) flex justify-center items-center border"
           >01</span
         >
         <button
-          class="bg-white text-black w-12 h-12 flex justify-center items-center border cursor-pointer"
+          class="bg-white text-black h-12 w-1/3 mt-4 md:(w-12 h-12) flex justify-center items-center border cursor-pointer"
         >
           <NuxtIcon name="arrow-right" />
         </button>

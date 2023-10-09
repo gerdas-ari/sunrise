@@ -3,16 +3,15 @@ import { SwiperSlide } from "swiper/vue";
 import { ArticleSlide } from "~/entities/Article";
 
 const props = defineProps<{
-  title?: string
-}>()
-
-
-
+  title?: string;
+}>();
 </script>
 
 <template>
   <section class="container">
-    <h2 class="text-4xl font-bold text-center">{{ title ?? 'Новости и статьи' }}</h2>
+    <h2 class="text-4xl font-bold text-center">
+      {{ title ?? "Новости и статьи" }}
+    </h2>
 
     <ListWithPagination
       class="mt-15"

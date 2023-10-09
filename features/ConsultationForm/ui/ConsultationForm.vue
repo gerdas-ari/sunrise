@@ -6,20 +6,20 @@ const additional = ref("");
 </script>
 
 <template>
-  <form class="flex flex-col gap-3 w-90">
+  <form class="flex flex-col gap-3">
     <input
       type="text"
       placeholder="Ваше имя"
       required
       v-model="name"
-      class="input"
+      class="input w-full"
     />
     <input
       type="tel"
       placeholder="Номер телефона"
       required
       v-model="phone"
-      class="input"
+      class="input w-full"
     />
 
     <textarea

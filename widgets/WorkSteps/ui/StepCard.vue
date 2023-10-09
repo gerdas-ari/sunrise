@@ -14,13 +14,13 @@ const props = defineProps<{
     <div
       class="absolute top-0 left-0 w-full h-full flex justify-center items-center -z-10 pointer-events-none"
     >
-      <NuxtImg :src="'/images/' + imageSrc" :alt="title" class="" />
+      <NuxtImg :src="'/images/' + imageSrc" :alt="title" class="object-contain" />
     </div>
 
-    <div class="text-center w-200 flex flex-col items-center gap-5 text-shadow-xl">
+    <div class="text-center flex flex-col items-center gap-5 text-shadow-xl">
       <p>{{ step }}</p>
 
-      <h3 class="text-5xl font-bold">{{ title }}</h3>
+      <h3 class="text-3xl lg:text-5xl font-bold">{{ title }}</h3>
 
       <p>{{ description }}</p>
 

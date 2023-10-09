@@ -22,8 +22,8 @@ import AutoCard from "./AutoCard.vue";
         :slides-per-view="1"
       >
         <SwiperSlide v-for="car in 5">
-          <div class="flex gap-2">
-            <AutoCard />
+          <div class="md:flex gap-2 my-2">
+            <AutoCard class="my-2 md:my-0" />
             <AutoCard />
           </div>
         </SwiperSlide>

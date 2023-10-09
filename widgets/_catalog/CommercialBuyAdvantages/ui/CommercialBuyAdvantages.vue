@@ -4,7 +4,7 @@
       Преимущества покупки коммерческого транспорта
     </h2>
 
-    <div class="grid grid-cols-4 gap-5 mt-15">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mt-15">
       <article
         class="b b-dark flex flex-col gap-5 justify-center items-center p-15 text-center"
       >

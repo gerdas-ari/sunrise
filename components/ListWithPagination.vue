@@ -25,6 +25,24 @@ function slidePrev() {
 }
 
 const modules = [Pagination, Navigation];
+
+const breakPoints = computed(() => {
+  if (props.slidesPerView) {
+    return null;
+  } else {
+    return {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    };
+  }
+});
 </script>
 
 <template>
@@ -36,6 +54,7 @@ const modules = [Pagination, Navigation];
       :pagination="{
         type: 'progressbar',
       }"
+      :breakpoints="breakPoints"
       :navigation="false"
       :modules="modules"
       :class="props.swiperClass"
@@ -44,17 +63,17 @@ const modules = [Pagination, Navigation];
     </swiper>
 
     <section class="flex justify-between items-center">
-      <div class="flex gap-2 mt-4">
+      <div class="flex gap-2">
         <button
           @click="slidePrev()"
-          class="p-3 b hover:(bg-black text-white) transition"
+          class="p-3 btn-black-outline mt-2"
         >
           <NuxtIcon name="arrow-left-smooth" />
         </button>
 
         <button
           @click="slideNext()"
-          class="p-3 b hover:(bg-black text-white) transition"
+          class="p-3 btn-black-outline mt-2"
         >
           <NuxtIcon name="arrow-right-smooth" />
         </button>

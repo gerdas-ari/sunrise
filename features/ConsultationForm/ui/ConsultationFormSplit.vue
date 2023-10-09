@@ -7,20 +7,20 @@ const additional = ref("");
 
 <template>
   <form>
-    <div class="flex gap-4">
+    <div class="md:flex gap-4">
       <input
         type="text"
         placeholder="Ваше имя"
         required
         v-model="name"
-        class="input w-70"
+        class="input w-full"
       />
       <input
         type="tel"
         placeholder="Номер телефона"
         required
         v-model="phone"
-        class="input w-70"
+        class="input w-full mt-4 md:mt-0"
       />
     </div>
 
@@ -32,10 +32,10 @@ const additional = ref("");
       v-model="additional"
     ></textarea>
 
-    <div class="flex items-center gap-4 mt-4">
-      <button class="btn-red-filled w-1/2">Отправить заявку</button>
+    <div class="md:flex items-center gap-4 mt-4">
+      <button class="btn-red-filled w-full md:w-1/2">Отправить заявку</button>
 
-      <p class="text-center text-gray text-sm">
+      <p class="text-center text-gray text-sm mt-4 md:mt-0">
         Нажимая кнопку вы соглашаетесь <br />
         с политикой конфиденциальности
       </p>

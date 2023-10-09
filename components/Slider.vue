@@ -36,7 +36,7 @@ const modules = [Pagination, Navigation];
     </swiper>
 
     <section
-      class="flex justify-between items-center float-right z-10 absolute bottom-5 right-5"
+      class="flex justify-between items-center z-10 absolute bottom-5 right-5"
     >
       <div class="flex gap-2 mt-4">
         <button

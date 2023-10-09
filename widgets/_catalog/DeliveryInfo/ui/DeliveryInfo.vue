@@ -14,9 +14,9 @@ const props = defineProps<{
     >
       <p>{{ head }}</p>
 
-      <h2 class="text-6xl font-bold">{{ title }}</h2>
+      <h2 class="text-3xl md:text-6xl font-bold">{{ title }}</h2>
 
-      <p class="text-3xl">{{ description }}</p>
+      <p class="text-3xl text-center">{{ description }}</p>
 
       <p>{{ additional }}</p>
     </div>

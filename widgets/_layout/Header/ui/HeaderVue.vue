@@ -6,8 +6,8 @@ import Socials from "./Socials.vue";
 
 <template>
   <header>
-    <Links />
+    <Links class="hidden lg:flex" />
     <Socials />
-    <AutoCategories />
+    <AutoCategories class="hidden lg:block" />
   </header>
 </template>

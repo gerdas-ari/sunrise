@@ -26,7 +26,7 @@
       <!-- Img -->
 
       <div class="w-full h-full flex justify-center">
-        <NuxtImg src="/images/steps/wheel.png" alt="step1" />
+        <NuxtImg src="/images/steps/wheel.png" alt="Шаг" class="object-cover" />
       </div>
     </article>
     <article class="relative b h-130 my-4 overflow-hidden">
@@ -55,8 +55,8 @@
       <!-- Img -->
 
       <div class="w-full h-full flex justify-center">
-        <NuxtImg src="/images/steps/paper_clip_1.png" alt="step1" />
-        <NuxtImg src="/images/steps/paper_clip_2.png" alt="step1" />
+        <NuxtImg src="/images/steps/paper_clip_1.png" alt="Шаг"  class="object-cover"/>
+        <NuxtImg src="/images/steps/paper_clip_2.png" alt="Шаг"  class="object-cover"/>
       </div>
     </article>
     <article class="relative b h-130 my-4 overflow-hidden">
@@ -84,8 +84,8 @@
       <div class="w-full h-full flex justify-end items-center">
         <NuxtImg
           src="/images/steps/car.png"
-          alt="step1"
-          class="w-full h-full"
+          alt="Шаг"
+          class="w-full h-full object-cover"
         />
       </div>
     </article>
@@ -108,8 +108,8 @@
       <!-- Img -->
 
       <div class="w-full h-full flex justify-between">
-        <NuxtImg src="/images/steps/coin_1.png" alt="step1" />
-        <NuxtImg src="/images/steps/coin_2.png" alt="step1" />
+        <NuxtImg src="/images/steps/coin_1.png" alt="Шаг" class="object-cover" />
+        <NuxtImg src="/images/steps/coin_2.png" alt="Шаг" class="object-cover" />
       </div>
     </article>
 
@@ -134,7 +134,7 @@
       <!-- Img -->
 
       <div class="w-full h-full flex justify-center items-start">
-        <NuxtImg src="/images/constructor_car.png" alt="step1" />
+        <NuxtImg src="/images/constructor_car.png" alt="Шаг" class="object-cover h-full " />
       </div>
     </article>
     <article class="relative b h-130 my-4 overflow-hidden">
@@ -158,7 +158,7 @@
       <!-- Img -->
 
       <div class="w-full h-full flex justify-center items-start">
-        <NuxtImg src="/images/shipping.png" alt="step1" />
+        <NuxtImg src="/images/shipping.png" alt="Шаг" class="h-full object-contain" />
       </div>
     </article>
   </section>

@@ -46,7 +46,6 @@ const advantages = [
 ];
 
 const strings = ["MAZDA", "HONDA", "MITSUBISHI", "TOYOTA"];
-
 </script>
 
 <template>
@@ -57,9 +56,13 @@ const strings = ["MAZDA", "HONDA", "MITSUBISHI", "TOYOTA"];
     :form-title="'Нужен авто в отличном состоянии из Японии?'"
   >
     <template #button-group>
-      <div class="flex gap-2 py-10">
-        <button class="btn-red-filled px-15">Рассчитать стоимость</button>
-        <button class="btn-red-outline px-15">Перейти на аукцион</button>
+      <div class="md:flex gap-2 py-10 px-4 md:px-0">
+        <button class="btn-red-filled px-15 w-full my2 md:w-80">
+          Рассчитать стоимость
+        </button>
+        <button class="btn-red-outline px-15 w-full my2 md:w-80">
+          Перейти на аукцион
+        </button>
       </div>
     </template>
 

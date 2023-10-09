@@ -7,7 +7,11 @@ import SummaryVue from "./SummaryVue.vue";
 
 <template>
   <footer>
-    <Socials />
+    <div class="flex justify-center b-y b-dark p-5">
+      <NuxtImg src="/images/logo.png" />
+    </div>
+
+    <!-- <Socials /> -->
     <Consultation />
     <Contacts />
     <SummaryVue />

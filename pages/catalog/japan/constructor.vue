@@ -49,9 +49,13 @@ const buyAdvantages = [
     :form-title="'Как заказать авто под запчасти?'"
   >
     <template #button-group>
-      <div class="flex gap-2 py-10">
-        <button class="btn-red-filled px-15">Рассчитать стоимость</button>
-        <button class="btn-red-outline px-15">Перейти на аукцион</button>
+      <div class="md:flex gap-2 py-10">
+        <button class="btn-red-filled px-15 w-full md:w-max my-2">
+          Рассчитать стоимость
+        </button>
+        <button class="btn-red-outline px-15 w-full md:w-max my-2">
+          Перейти на аукцион
+        </button>
       </div>
     </template>
 

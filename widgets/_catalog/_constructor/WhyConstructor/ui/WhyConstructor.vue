@@ -4,9 +4,11 @@
       Зачем ввозить авто конструктором?
     </h2>
 
-    <div class="mt-15 flex gap-5">
-      <div class="b b-dark p-10">
-        <h3 class="text-3xl font-bold">Основная цель — сэкономить на растаможке</h3>
+    <div class="mt-15 md:flex gap-5">
+      <div class="b b-dark mt-2 p-10">
+        <h3 class="text-3xl font-bold">
+          Основная цель — сэкономить на растаможке
+        </h3>
 
         <p class="mt-4">
           Автомобили-конструкторы, как правило, заказывают клиенты, которым
@@ -16,7 +18,7 @@
         </p>
       </div>
 
-      <div class="b b-dark p-10">
+      <div class="b b-dark mt-2 p-10">
         <span class="text-3xl font-bold">Важно!</span>
 
         <p class="mt-4">

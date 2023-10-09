@@ -1,5 +1,5 @@
 <template>
-  <article class="flex justify-between b">
+  <article class="lg:flex justify-between b">
     <div class="">
       <div class="border-b b-dark p-4 flex items-center gap-2">
         <div class="w-6 h-6 bg-gray"></div>
@@ -21,6 +21,10 @@
       </div>
     </div>
 
-    <NuxtImg src="/images/reviews/user.png" alt="Отзыв" />
+    <NuxtImg
+      src="/images/reviews/user.png"
+      alt="Отзыв"
+      class="object-contain w-full lg:w-fit "
+    />
   </article>
 </template>

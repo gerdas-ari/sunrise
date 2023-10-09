@@ -13,7 +13,7 @@ import { CarEntity } from "~/entities/Car";
       </p>
     </div>
 
-    <section class="grid grid-cols-3 gap-5 mt-15">
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-15">
       <CarEntity v-for="car in 9" />
     </section>
   </section>

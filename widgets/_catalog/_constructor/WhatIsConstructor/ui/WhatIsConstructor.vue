@@ -1,13 +1,17 @@
 <script lang="ts" setup>
-import { SwiperSlide } from "swiper/vue";
+import {
+  ConsultationForm,
+  ConsultationFormSplit,
+} from "~/features/ConsultationForm";
+import { ConsultationBlock } from "~/widgets/_catalog/ConsultationBlock";
 </script>
 
 <template>
   <section class="container">
     <h2 class="text-3xl font-bold text-center">Что такое конструктор?</h2>
 
-    <div class="mt-15 flex gap-5">
-      <div class="w-150 b-y b-dark">
+    <div class="mt-15 lg:flex gap-5">
+      <div class="w-full b-y b-dark">
         <span class="text-gray text-sm">
           Такой автомобиль перед прохождением таможни разбирают на три основные
           части: двигатель, кузов и ходовую часть. На каждую из них оформляется
@@ -16,14 +20,14 @@ import { SwiperSlide } from "swiper/vue";
           невозможно.
         </span>
 
-        <Slider :swiper-class="'brokenAuto'" class="b b-dark mt-4">
-          <SwiperSlide v-for="i in 3" :key="i">
-            <img src="/assets/images/broken_car.png" alt="" class="w-full" />
-          </SwiperSlide>
-        </Slider>
+        <NuxtPicture
+          src="/images/mother_plate.png"
+          class="w-full h-100 mt-4 object-cover"
+          alt="Изображение комплектующих авто"
+        />
       </div>
 
-      <div class="b b-dark p10">
+      <div class="b b-dark p10 text-sm lg:text-base">
         <p class="text-2xl font-bold">Плюсы и минусы услуги</p>
 
         <div class="mt-10">
@@ -53,5 +57,7 @@ import { SwiperSlide } from "swiper/vue";
         </div>
       </div>
     </div>
+
+    
   </section>
 </template>

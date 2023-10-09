@@ -1,6 +1,6 @@
 <template>
   <article class="b b-dark">
-    <img src="/public/images/china.png" alt="" />
+    <img src="/images/china.png" alt="" />
 
     <div class="flex gap-4 p-7 items-center">
       <span class="text-2xl">TOYOTA SUPRA A90</span>

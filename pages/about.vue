@@ -38,41 +38,43 @@ const team = [
     />
   </section>
 
-  <section class="grid grid-cols-6 gap-4 mt-50 container">
+  <section
+    class="flex lg:grid grid-cols-6 gap-4 mt-50 container overflow-auto lg:overflow-initial"
+  >
     <article
-      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl"
+      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl min-w-70 lg:min-w-min"
     >
-      <NuxtImg src="/images/icons/ad1.png" alt="Изображение автомобиля" />
+      <NuxtPicture src="/images/icons/ad1.png" alt="Изображение автомобиля" />
       <span>3 страны привоза</span>
     </article>
     <article
-      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl"
+      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl min-w-70 lg:min-w-min"
     >
-      <NuxtImg src="/images/icons/ad2.png" alt="Изображение автомобиля" />
+      <NuxtPicture src="/images/icons/ad2.png" alt="Изображение автомобиля" />
       <span>с 2016 года на рынке</span>
     </article>
     <article
-      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl"
+      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl min-w-70 lg:min-w-min"
     >
-      <NuxtImg src="/images/icons/ad3.png" alt="Изображение автомобиля" />
+      <NuxtPicture src="/images/icons/ad3.png" alt="Изображение автомобиля" />
       <span>20 человек в команде</span>
     </article>
     <article
-      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl"
+      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl min-w-70 lg:min-w-min"
     >
-      <NuxtImg src="/images/icons/ad4.png" />
+      <NuxtPicture src="/images/icons/ad4.png" />
       <span>Доставка во все города РФ</span>
     </article>
     <article
-      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl"
+      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl min-w-70 lg:min-w-min"
     >
-      <NuxtImg src="/images/icons/ad6.png" alt="Изображение автомобиля" />
+      <NuxtPicture src="/images/icons/ad6.png" alt="Изображение автомобиля" />
       <span>1000+ авто привезено</span>
     </article>
     <article
-      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl"
+      class="flex flex-col gap-4 p-10 b b-dark items-center text-center font-bold text-xl min-w-70 lg:min-w-min"
     >
-      <NuxtImg src="/images/icons/ad5.png" alt="Изображение автомобиля" />
+      <NuxtPicture src="/images/icons/ad5.png" alt="Изображение автомобиля" />
       <span>На связи 24\7</span>
     </article>
   </section>

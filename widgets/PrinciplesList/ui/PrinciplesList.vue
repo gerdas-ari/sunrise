@@ -49,7 +49,7 @@ const principles = [
       Преимущества заказа авто через SUNRISE AUTO
     </h2>
 
-    <section class="grid grid-cols-3 gap-5">
+    <section class="grid  md:grid-cols-2 lg:grid-cols-3 gap-5">
       <PrincipleCard
         v-for="principle in principles"
         :key="principle.title"
@@ -60,7 +60,7 @@ const principles = [
     </section>
 
     <button
-      class="float-right my-2 btn-red-outline w-80"
+      class="float-right my-2 btn-red-outline w-full md:w-80"
       v-if="isButtonVisible"
     >
       Схема заказа авто

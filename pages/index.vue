@@ -11,7 +11,6 @@ import { WorkSteps } from "~/widgets/WorkSteps";
 import { YoutubeVideos } from "~/widgets/YoutubeVideos";
 import { WelcomeBlock } from "~/widgets/WelcomeBlock";
 
-
 const categories = [
   "Кей-кары",
   "Хэтчбеки",

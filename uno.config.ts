@@ -10,13 +10,14 @@ export default defineConfig({
   theme: {
     colors: {
       red: "#F00",
+      dark_red: "#C00",
       gray: "#676767",
       dark: "#454545",
     },
   },
 
   shortcuts: {
-    container: "mx-[94px]",
+    container: "mx-[5px] lg:mx-[94px]",
 
     b: "b-dark border-[0.5px]",
 
@@ -26,7 +27,8 @@ export default defineConfig({
     "input-black": "border border-black p-3 px-5 outline-none ",
 
     // Buttons
-    "btn-red-filled": "bg-red text-white flex justify-center items-center p-4",
+    "btn-red-filled":
+      "bg-red hover:bg-dark_red transition text-white flex justify-center items-center p-4",
     "btn-red-outline":
       "bg-transparent border border-red p-3 px-5 transition hover:bg-red hover:text-white hover:border-transparent",
 

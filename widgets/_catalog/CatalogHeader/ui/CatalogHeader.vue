@@ -10,9 +10,9 @@ const props = defineProps<{
 </script>
 
 <template>
-  <section class="container pt-10">
+  <section class="container">
     <section class="relative">
-      <div class="flex justify-between">
+      <div class="flex justify-between pt-10">
         <div>
           <h1 class="text-5xl font-bold">
             {{ title }}
@@ -23,7 +23,9 @@ const props = defineProps<{
           </p>
         </div>
 
-        <ConsultationFormMini :title="formTitle" />
+        <div class="hidden md:block">
+          <ConsultationFormMini :title="formTitle" />
+        </div>
       </div>
 
       <slot name="button-group" />
@@ -34,7 +36,7 @@ const props = defineProps<{
         <NuxtImg
           :src="imageSrc"
           alt="Автомобили с аукционов Японии"
-          class="h-full"
+          class="h-full object-cover"
         />
       </div>
     </section>

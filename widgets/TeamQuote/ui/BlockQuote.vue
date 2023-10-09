@@ -1,8 +1,8 @@
 <template>
-  <section class="container flex gap-30">
-    <div class="min-w-100 h-150 bg-gray basis-2/3"></div>
+  <section class="container md:flex gap-2 lg:gap-30">
+    <div class="min-w-90 min-h-100 bg-gray basis-2/3"></div>
 
-    <div>
+    <div class="mt-4 md:mt-0">
       <div>
         <blockquote class="text-3xl font-bold">
           У наших клиентов нет рисков привезти «непонятный» автомобиль со

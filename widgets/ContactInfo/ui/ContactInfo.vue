@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <section class="flex justify-between">
+    <section class="md:flex justify-between">
       <div>
         <p class="text-4xl font-bold">
           Владивосток, <br />
@@ -11,9 +11,9 @@
 
       <div>
         <span class="text-4xl font-bold">8 (800) 511-07-88</span>
-        <p class="text-gray text-xl text-right mt-4">mail@sunrise-auto.ru</p>
+        <p class="text-gray text-xl md:text-right mt-4">mail@sunrise-auto.ru</p>
 
-        <div class="flex gap-4 float-right mt-5">
+        <div class="flex gap-4 md:float-right mt-5">
           <div
             class="p-1.5 bg-red rounded-full flex justify-center items-center"
           >
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <NuxtImg src="/images/map.png" class="w-full my-10" />
+    <NuxtImg src="/images/map.png" class="w-full my-10" alt="Карта" />
 
     <div class="flex gap-4 items-center">
       <NuxtIcon name="location_point" class="text-red text-4xl" />
@@ -46,7 +46,8 @@
       <p class="text-3xl font-bold">Как к нам добраться?</p>
     </div>
 
-    <p class="text-gray mt-2 ">Пушкинская 109, офис 209, вход через “Никодент”, 2 этаж.</p>
-
+    <p class="text-gray mt-2">
+      Пушкинская 109, офис 209, вход через “Никодент”, 2 этаж.
+    </p>
   </section>
 </template>

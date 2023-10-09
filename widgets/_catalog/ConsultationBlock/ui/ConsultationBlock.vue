@@ -7,9 +7,11 @@ const props = defineProps<{
 </script>
 
 <template>
-  <section class="container flex justify-between b b-dark p-10 gap-10">
-    <h2 class="text-3xl font-bold">{{ title }}</h2>
+  <section class="lg:flex justify-between gap-15 b mt-4 p-10 container">
+    <p class="text-3xl font-bold basis-2/4">
+      {{ title }}
+    </p>
 
-    <ConsultationFormSplit />
+    <ConsultationFormSplit class="mt-10 lg:mt-0 lg:w-1/2" />
   </section>
 </template>
